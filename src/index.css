@@ -46,6 +46,10 @@ code {
   margin: 0 10px;
 }
 
+.btnFont {
+  font-size: 35px;
+}
+
 .content {
   background: rgba(0, 0, 0, 0.1);
   max-width: 500px;
