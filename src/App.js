@@ -1,16 +1,17 @@
 import { Link, Route, Routes } from "react-router-dom";
 import Home from './Components/Home';
-import BookList from './Components/BookList';
-import Book from './Components/Book';
-import NewBook from './Components/NewBook';
 import NotFound from './Components/NotFound';
 import BookLayout from "./Components/BookLayout";
+import BookRoute from "./Components/BookRoute";
 function App() {
 
 
   return (
     <div className="Div">
       <div className="content" >
+        <Routes>
+          <Route path="/books" element={<h4>List of Book Content Links from First Route</h4>} />
+        </Routes>
         <nav>
           <ul>
             <li><Link to='/' >Home</Link></li>
@@ -22,11 +23,7 @@ function App() {
 
           {/* Nested Routes */}
 
-          <Route path="/books" element={<BookLayout />}>
-            <Route index element={<BookList />} />
-            <Route path=":id" element={<Book />} />
-            <Route path="new" element={<NewBook />} />
-          </Route>
+          <Route path="/books/*" element={<BookRoute />} />
           
           {/* Normal React Route */}
 
