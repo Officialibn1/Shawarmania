@@ -85,3 +85,6 @@ ul{
   gap: 1em;
   margin: 15px 0;
 }
+ul a{
+  font-size: 17px;
+}
