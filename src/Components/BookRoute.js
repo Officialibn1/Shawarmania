@@ -8,11 +8,13 @@ import BookLayout from './BookLayout';
 const BookRoute = () => {
     return (
         <>
-        <BookLayout />
+        
         <Routes>
-            <Route index element={<BookList />} />
-            <Route path=":id" element={<Book />} />
-            <Route path="new" element={<NewBook />} />
+            <Route element={<BookLayout />}>
+                <Route index element={<BookList />} />
+                <Route path=":id" element={<Book />} />
+                <Route path="new" element={<NewBook />} />
+            </Route>
         </Routes>
         </>
     );

@@ -1,9 +1,38 @@
-import { Link, Route, Routes } from "react-router-dom";
+import { Link, Route, Routes, useRoutes } from "react-router-dom";
 import Home from './Components/Home';
 import NotFound from './Components/NotFound';
-import BookLayout from "./Components/BookLayout";
 import BookRoute from "./Components/BookRoute";
+// import BookLayout from "./Components/BookLayout";
+// import BookList from "./Components/BookList";
+// import NewBook from "./Components/NewBook";
 function App() {
+
+//   Creating routes using JavaScript without JSX
+  // const routes = useRoutes([
+  //   {
+  //     path: '/',
+  //     element: <BookLayout />,
+  //     children: [
+  //       {
+  //         index: true,
+  //         element: <Home />
+  //       },
+  //       {
+  //         path: 'books',
+  //         element: <BookList />,
+  //       },
+  //       {
+  //         path: 'books/new',
+  //         element: <NewBook />
+  //       },
+  //       {
+  //         path: '*',
+  //         element: <NotFound />
+  //       }
+  //     ]
+  //   }
+
+  // ])
 
 
   return (
