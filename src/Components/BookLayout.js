@@ -11,7 +11,7 @@ const BookLayout = () => {
                 <li><Link to='/books/New'>New Book</Link></li>
             </ul>
             </nav>
-            <Outlet />
+            <Outlet context={{text: 'Hello React'}} />
         </>
     );
 }
