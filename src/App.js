@@ -1,4 +1,4 @@
-import { Link, Route, Routes, useRoutes } from "react-router-dom";
+import { Link, NavLink, Route, Routes, useRoutes } from "react-router-dom";
 import Home from './Components/Home';
 import NotFound from './Components/NotFound';
 import BookRoute from "./Components/BookRoute";
@@ -43,8 +43,10 @@ function App() {
         </Routes>
         <nav>
           <ul>
-            <li><Link to='/' >Home</Link></li>
-            <li><Link to='/books' >BookList</Link></li>
+            <li><NavLink to='/' /*style={({isActive}) => isActive ? {color: 'red'} : {color: 'green'}}*/>
+                Home
+              </NavLink></li>
+            <li><NavLink to='/books' >BookList</NavLink></li>
           </ul>
         </nav>
         <Routes>
