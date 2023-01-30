@@ -43,10 +43,10 @@ function App() {
         </Routes>
         <nav>
           <ul>
-            <li><NavLink to='/' /*style={({isActive}) => isActive ? {color: 'red'} : {color: 'green'}}*/>
+            <li><NavLink to='/' isActive /*style={({isActive}) => isActive ? {color: 'red'} : {color: 'green'}}*/>
                 Home
               </NavLink></li>
-            <li><NavLink to='/books' >BookList</NavLink></li>
+            <li><NavLink  to='/books' end>BookList</NavLink></li>
           </ul>
         </nav>
         <Routes>
