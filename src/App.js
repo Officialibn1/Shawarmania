@@ -1,54 +1,30 @@
-import { useEffect, useState } from "react";
-
+import { useState } from "react";
 
 function App() {
-
-  // useState and useEffect for handling text and resource type
-  
-  const [resourceType, setResourceType] = useState('posts');
-  const [text, setText] = useState([]);
-  useEffect(() => {
-    fetch(`https://jsonplaceholder.typicode.com/${resourceType}`)
-      .then(response => response.json())
-      .then(json => setText(json))
-    return () => {
-      ''
-    };
-  }, [resourceType]);
-
-  // --------------------------------------------------
-
-  // useState & useEffect for handling windows resize
-
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  const setWidth = () => {
-    setWindowWidth(window.innerWidth)
+  const [number, setNumber] = useState(0);
+  const [dark, setDark] = useState(false);
+  const doubleNumber = slowFunction(number);
+  const themeMode = {
+    backgroundColor: dark ? 'black' : 'white',
+    color: dark ? 'white' : 'black',
+    margin: '20px',
+    borderRadius: '5px'
   }
-
-  useEffect(() => {
-    window.addEventListener('resize', setWidth)
-    return () => {
-      window.removeEventListener('resize', setWidth)
-    }
-  }, []);
-
-  // ----------------------------------------------------
-
   return (
     <div className="Div">
-      <div className="content" >
-
-        <button className="Button" onClick={() => setResourceType('posts')}>Post</button>
-        <button className="Button" onClick={() => setResourceType('users')}>Users</button>
-        <button className="Button" onClick={() => setResourceType('comments')}>Comments</button>
-        <h1>{resourceType}</h1>
-        <div>
-          {windowWidth}
-        </div>
+      <div className="content">
+        <input className="Button" type="number" value={number} onChange={(e) => setNumber(parseInt(e.target.value))}/>
+        <button className="Button" onClick={() => setDark(prevDark => !prevDark)}>{dark ? 'Light Mode' : 'Dark Mode'}</button>
+        <h1 style={themeMode} >{doubleNumber}</h1>
       </div>
     </div>
   );
+}
+
+const slowFunction = (number) => {
+ for (let i = 0; i <= 200000000; i++) {
+  return number * 2
+ } 
 }
 
 export default App;
