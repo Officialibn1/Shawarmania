@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Comments from "./Components/Comments";
 import Post from "./Components/Post";
 import Users from "./Components/Users";
@@ -6,6 +6,12 @@ import Users from "./Components/Users";
 function App() {
   const [resourceType, setResourceType] = useState(<Post />);
 
+  useEffect(() => {
+    console.log('Effect Rendered')
+    return () => {
+      console.log('Effect RenderCleaned Up')
+    };
+  }, [resourceType]);
 
   return (
     <div className="Div">
