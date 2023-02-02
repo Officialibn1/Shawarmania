@@ -1,15 +1,32 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 
 function App() {
   const [number, setNumber] = useState(0);
+
   const [dark, setDark] = useState(false);
-  const doubleNumber = slowFunction(number);
-  const themeMode = {
-    backgroundColor: dark ? 'black' : 'white',
-    color: dark ? 'white' : 'black',
-    margin: '20px',
-    borderRadius: '5px'
-  }
+  
+  // UseMemo for Theme Styles
+
+  const themeMode = useMemo(() => {
+    return {
+      backgroundColor: dark ? 'black' : 'white',
+      color: dark ? 'white' : 'black',
+      margin: '20px',
+      borderRadius: '5px'
+  }}, [dark]) 
+  
+  // -------------------------------------------------------
+
+
+  // UseMemo and DoubleNumber Function for memorizing the number state
+  
+  const doubleNumber = useMemo(() => {
+    return slowFunction(number);
+  }, [number]) 
+
+  // ------------------------------------------------------------
+
+
   return (
     <div className="Div">
       <div className="content">
@@ -22,9 +39,8 @@ function App() {
 }
 
 const slowFunction = (number) => {
- for (let i = 0; i <= 200000000; i++) {
-  return number * 2
- } 
+ for (let i = 0; i <= 300000000; i++) {}
+  return number * 2 
 }
 
 export default App;
