@@ -54,6 +54,7 @@ code {
   width: 80%;
   max-width: 600px;
   min-height: 60vh;
+  margin: 10vh 0;
   border: 2px solid black;
   word-wrap: break-word;
   padding: 30px 50px;
