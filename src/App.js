@@ -12,11 +12,11 @@ function App() {
  //Increment count State Function
 
  const increment = () => {
-  setCount((n) => n > 10 ? n + 1 : n);
+  setCount((n) => n < 10 ? n + 1 : n);
  };
  
   const reduceCount = () => {
-   setCount((n) => n < 0 ? n - 1 : n );
+   setCount((n) => n > 0 ? n - 1 : n );
   };
 
  const addTodo = () => {
@@ -25,7 +25,9 @@ function App() {
   return (
     <div className="Div">
       <div className="content">
-        <h1 className="H1" >Use Memo <span>{number}</span></h1>
+        <h1 className="H1" >Use Memo 
+          <span>{number}</span>
+        </h1>
         <button className="Button" onClick={addTodo} >Add Todo</button>
         <div>
           {todos.map((todo, index) => 
