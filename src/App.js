@@ -3,11 +3,11 @@ import { useState, useMemo } from "react";
 function App() {
  const [count, setCount] = useState(0);
  const [todos, setTodos] = useState([]); 
+ const [dark, setDark] = useState(false);
  
- const number = useMemo(() => {
+const number = useMemo(() => {
   return slowFunction(count);
- }, [count]) 
- 
+}, [count]);
  
  //Increment count State Function
 
@@ -47,7 +47,7 @@ function App() {
 }
 
 const slowFunction = (num) => {
-  for (let i = 0; i < 300000000; i++) {} 
+  for (let i = 0; i < 400000000; i++) {} 
     return num += 1;
 
 }
