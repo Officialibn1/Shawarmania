@@ -94,3 +94,7 @@ ul a{
 .active{
   color: grey;
 }
+
+.margin10 {
+  margin: 10px;
+}
