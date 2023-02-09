@@ -28,7 +28,7 @@ const number = useMemo(() => {
         <h1 className="H1" >Use Memo 
           <span>{number}</span>
         </h1>
-        <button className="Button" onClick={addTodo} >Add Todo</button>
+        <button className="Button" onClick={addTodo} >Add Todo</button> 
         <div>
           {todos.map((todo, index) => 
             <p key={index} >{todo}</p>
