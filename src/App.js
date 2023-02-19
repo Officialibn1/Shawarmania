@@ -1,11 +1,14 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Nav from './Components/Nav';
 
 function App() {
   return (
-      <div className="Div">
-        <h1>Hello React</h1>
+      <div>
+        <Nav />
       </div>
   );
 }
+
 
 
 export default App;
