@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <section className='p-5 bg-dark text-light'>
+        <section className='p-5 bg-dark text-light' id='#home'>
             <div className="container mt-5">
                 <div className="row align-items-center justify-content-center">
                     <div className="text-md-start text-sm-center col-md-6">

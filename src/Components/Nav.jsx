@@ -20,8 +20,8 @@ const Nav = () => {
                 {/* Navbar Links */}
                 <div id='navMenu' className="collapse navbar-collapse text-sm-center">
                     <ul className="navbar-nav ms-auto">
-                        <li className="nav-item active"><Link className='nav-link' to="/">Home</Link></li>
-                        <li className="nav-item"><Link className='nav-link' to="/offers">Offers</Link></li>
+                        <li className="nav-item active"><Link className='nav-link' to="#home">Home</Link></li>
+                        <li className="nav-item"><Link className='nav-link' to="#subscribe">Subscribe</Link></li>
                         <li className="nav-item"><Link className='nav-link' to="/order">Order</Link></li>
                         <li className="nav-item"><Link className='nav-link' to="/showcase">Showcase</Link></li>
                         <li className="nav-item"><Link className='nav-link' to="/about">About</Link></li>
