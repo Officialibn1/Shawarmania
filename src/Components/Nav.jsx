@@ -6,7 +6,7 @@ const Nav = () => {
         <nav className='navbar navbar-expand-lg navbar-dark bg-dark border border-bottom border-alert fixed-top'>
             <div className="container">
                 {/* Brand Logo */}
-                <Link to='#' className='navbar-brand'>
+                <Link to='/' className='navbar-brand'>
                     <h2 className="fw-light text-warning">
                         Shawarmania
                     </h2>
@@ -20,11 +20,11 @@ const Nav = () => {
                 {/* Navbar Links */}
                 <div id='navMenu' className="collapse navbar-collapse text-sm-center">
                     <ul className="navbar-nav ms-auto">
-                        <li className="nav-item active"><Link className='nav-link' to="#home">Home</Link></li>
-                        <li className="nav-item"><Link className='nav-link' to="#subscribe">Subscribe</Link></li>
-                        <li className="nav-item"><Link className='nav-link' to="/order">Order</Link></li>
-                        <li className="nav-item"><Link className='nav-link' to="/showcase">Showcase</Link></li>
-                        <li className="nav-item"><Link className='nav-link' to="/about">About</Link></li>
+                        <li className="nav-item active"><a className='nav-link' href="#home">Home</a></li>
+                        <li className="nav-item"><a className='nav-link' href="#subscribe">Subscribe</a></li>
+                        <li className="nav-item"><a className='nav-link' href="#order">Order</a></li>
+                        <li className="nav-item"><a className='nav-link' href="#showcase">Showcase</a></li>
+                        <li className="nav-item"><a className='nav-link' href="#about">About</a></li>
                     </ul>
                 </div>
             </div>
