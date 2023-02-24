@@ -7,9 +7,7 @@ const Nav = () => {
             <div className="container">
                 {/* Brand Logo */}
                 <Link to='/' className='navbar-brand'>
-                    <h2 className="fw-light text-warning">
-                        Shawarmania
-                    </h2>
+                    <img src="./images/shawarmania.png" alt="" />
                 </Link>
 
                 {/* Toggle Icon */}
