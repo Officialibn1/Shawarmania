@@ -21,8 +21,6 @@ const Nav = () => {
                         <li className="nav-item active"><a className='nav-link' href="#home">Home</a></li>
                         <li className="nav-item"><a className='nav-link' href="#subscribe">Services</a></li>
                         <li className="nav-item"><a className='nav-link' href="#order">Order</a></li>
-                        <li className="nav-item"><a className='nav-link' href="#showcase">Showcase</a></li>
-                        <li className="nav-item"><a className='nav-link' href="#about">About</a></li>
                     </ul>
                 </div>
             </div>

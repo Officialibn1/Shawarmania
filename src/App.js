@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Cards from './Components/Cards';
 import Header from './Components/Header';
 import Nav from './Components/Nav';
+import ShawarmaList from './Components/ShawarmaList';
 import Subscribe from './Components/Subscribe';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
         <Nav />
         <Header />
         <Subscribe />
-        <Cards />
+        <ShawarmaList />
       </div>
   );
 }
