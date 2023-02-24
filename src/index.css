@@ -19,9 +19,31 @@ code {
 }
 
 
+/* Logo Styles */
+.CustomLogo{
+  width: clamp(3.5em, 8vw, 10em);
+}
+
+
+
+
+
+/* ----------Media Quaries--------------- */
+
+
+/* Logo Styles */
+@media (max-width: 575px) {
+  .CustomLogo{
+    margin-left: 8vw;
+  }
+}
+
+
+
 /* Subscribe Component Styles */
 @media(min-width: 996px) {
   .inputGroup{
       max-width: 40%;
   }
 }
+
