@@ -10,7 +10,7 @@ const Header = () => {
                         <p className="lead">
                             We offer you the best and delicious meals you can get in town, all your favourite chups, snacks, pizza's, KFC standard prepared chicken and much more...
                         </p>
-                        <button className="btn btn-md bg-theme btn-warning">
+                        <button className="btn btn-md bg-theme btn-warning text-light">
                             Order Now
                         </button>
                     </div>
