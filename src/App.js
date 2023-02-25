@@ -4,6 +4,7 @@ import Nav from './Components/Nav';
 import ShawarmaList from './Components/ShawarmaList';
 import Search from './Components/Search';
 import Footer from './Components/Footer';
+import BurgerList from './Components/BurgerList';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Header />
         <Search />
         <ShawarmaList />
+        <BurgerList />
         <Footer />
       </div>
   );

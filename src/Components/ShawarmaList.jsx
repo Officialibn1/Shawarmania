@@ -1,6 +1,23 @@
 import React from 'react';
+import Shawarma from './Shawarma';
 import { FoodHeader } from './styles/FoodHeader';
-import { H1 } from './styles/H1H2H3';
+
+const Shawarmas = [
+  {SRC: './images/ChickenShawarmaWrap.png', title: 'Shawarma', span: '~Chicken & sausage~', price: 'N1,200.00'},
+  {SRC: './images/ChickennoSausage.jpg', title: 'Shawarma', span: '~Chicken No sausage~', price: 'N1,000.00'},
+  {SRC: './images/ChickenShawarmaWrap.png', title: 'Shawarma', span: '~Beef & sausage~', price: 'N1,200.00'},
+  {SRC: './images/BeefnoSausage.jpg', title: 'Shawarma', span: '~Beef No Sausage~', price: 'N1,000.00'},
+  {SRC: './images/AndSausage.jpg', title: 'Shawarma', span: '~Cheese & Sausage~', price: 'N1,700.00'},
+  {SRC: './images/ComboShawarma.jpeg', title: 'Shawarma', span: '~Cheese & Double Sausage~', price: 'N2,000.00'},
+  {SRC: './images/NoSausageShawarma.jpg', title: 'Shawarma', span: '~Cheese No Sausage~', price: 'N1,500.00'},
+  {SRC: './images/MeatyandCheese.jpg', title: 'Shawarma', span: '~Meaty & Cheese & Sausage~', price: 'N2,000.00'},
+  {SRC: './images/MeatynoSausage.jpg', title: 'Shawarma', span: '~Meaty No sausage~', price: 'N1,500.00'},
+  {SRC: './images/CheeseShawarma.png', title: 'Shawarma', span: '~Meaty With Cheese & Double Sausage~', price: 'N2,400.00'},
+  {SRC: './images/PitaShawarma.jpg', title: 'Shawarma', span: '~Pita~', price: 'N1,800.00'},
+  {SRC: './images/Combo.jpg', title: 'Shawarma', span: '~Combo~', price: 'N1,500.00'},
+  {SRC: './images/ComboShawarma.jpeg', title: 'Shawarma', span: '~Combo & Cheese~', price: 'N2,000.00'},
+  {SRC: './images/shawarma.jpeg', title: 'Shawarma', span: '~Combo & Double Sausage~', price: 'N1,800.00'},
+]
 
 const ShawarmaList = () => {
     return (
@@ -11,46 +28,9 @@ const ShawarmaList = () => {
         </FoodHeader>
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-
-          <div class="col">
-            <div class="card">
-              <img src="./images/burger6.jpeg" class="card-img-top bg-light" alt="..." />
-              <div class="card-body">
-                <H1 class="card-title Text">Burger<span>~Regular~</span></H1>
-                <p class="card-text Number">N1,200.00</p>
-              </div>
-              <div className="card-footer text-end">
-                <a href="/" className='Text btn btn-warning text-light'>Order Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card">
-              <img src="./images/shawarma.jpeg" class="card-img-top bg-light" alt="..." />
-              <div class="card-body">
-                <H1 class="card-title Text">Shawarma <br /><span>~Beef & sausage~</span></H1>
-                <p class="card-text Number">N1,200.00</p>
-              </div>
-              <div className="card-footer text-end">
-                <a href="/" className='Text btn btn-warning text-light'>Order Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card">
-              <img src="./images/burger6.jpeg" class="card-img-top bg-light" alt="..." />
-              <div class="card-body">
-                <H1 class="card-title Text">Burger<span>~Regular~</span></H1>
-                <p class="card-text Number">N1,200.00</p>
-              </div>
-              <div className="card-footer text-end">
-                <a href="/" className='Text btn btn-warning text-light'>Order Now</a>
-              </div>
-            </div>
-          </div>
-
+            {Shawarmas.map(shawarma => (
+              <Shawarma key={shawarma.index} shawarma={shawarma} />
+            ))}
         </div>
 
       </div>
