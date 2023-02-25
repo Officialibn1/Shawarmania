@@ -2,13 +2,13 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <section className='p-5 bg-dark text-light' id='#home'>
+        <section className='p-5 bg-dark text-light' id='home'>
             <div className="container mt-5">
                 <div className="d-lg-flex align-items-center justify-content-center">
                     <div className="text-md-start text-sm-center ">
-                        <h2 className='Text'>Shawarmania Fast Foods, Snack and Chups</h2>
+                        <h1 className='Text'>Shawarmania Fast Foods, Snacks and Chups</h1>
                         <p className="lead">
-                            We offer you the best and delicious meals you can get in town, all your favourite chups, snacks, pizza's, KFC standard prepared chicken and much more...
+                            We offer you the best and delicious meals you can get in town, all your delicious, Shawarma's, Chups, Snacks, Pizza's, KFC standard prepared chicken and much more...
                         </p>
                         <button className="btn btn-md bg-theme btn-warning text-light">
                             Order Now

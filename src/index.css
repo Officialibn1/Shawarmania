@@ -29,11 +29,36 @@ code {
 }
 
 
-/* Text Color */
+/* Text Styles */
 
 .Text{
   color: var(--text-theme);
 }
+
+.P{
+  font-size: .6em;
+}
+
+.P2{
+  font-size: 1em;
+}
+
+.UL {
+  list-style: none;
+
+}
+
+.LI {
+  font-size: .8em;
+  font-weight: 200;
+}
+
+.A{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+}
+
 
 /* Background Color */
 
