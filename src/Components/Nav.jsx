@@ -16,7 +16,7 @@ const Nav = () => {
                 </button>
 
                 {/* Navbar Links */}
-                <div id='navMenu' className="collapse navbar-collapse text-sm-center">
+                <div id='navMenu' className="collapse navbar-collapse text-center">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item active"><a className='nav-link' href="#home">Home</a></li>
                         <li className="nav-item"><a className='nav-link' href="#search">Search</a></li>

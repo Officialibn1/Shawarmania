@@ -7,7 +7,7 @@ const Search = () => {
                 <h2 className='text-warning fw-light'>Search for your favourites...</h2>
                 <div className="input-group inputGroup mt-3">
                     <input type="search" className="form-control" placeholder='Search...' />
-                    <button className="btn btn-warning text-light">Send</button>
+                    <button className="btn btn-warning text-light">Search</button>
                 </div>
             </div>
         </section>
