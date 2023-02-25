@@ -38,9 +38,9 @@ const Footer = () => {
 
 
                         {/* Social Icons */}
-                        <div className="d-flex gap-3 mt-4">
-                            <a href="instagram.com"><i className="bi bi-instagram h3 Text"></i></a>
-                            <a href="instagram.com"><i className="bi bi-whatsapp h3 Text"></i></a>
+                        <div className="d-flex gap-3 mt-4 text-center">
+                            <a href="https://instagram.com/shawarmania_ng?igshid=YmMyMTA2M2Y="><i className="bi bi-instagram h3 Text"></i></a>
+                            <a href="https://wa.me/message/QUC6ZCU7LXTVG1"><i className="bi bi-whatsapp h3 Text"></i></a>
                             <a href="instagram.com"><i className="bi bi-facebook h3 Text"></i></a>
                         </div>
 
