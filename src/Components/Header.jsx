@@ -1,4 +1,7 @@
 import React from 'react';
+import { HeaderH1 } from './styles/H1H2H3';
+import { P } from './styles/P';
+
 
 const Header = () => {
     return (
@@ -6,10 +9,10 @@ const Header = () => {
             <div className="container mt-5">
                 <div className="d-lg-flex align-items-center justify-content-center">
                     <div className="text-md-start text-sm-center ">
-                        <h1 className='Text'>Shawarmania Fast Foods, Snacks and Chups</h1>
-                        <p className="lead">
+                        <HeaderH1>Shawarmania Fast Foods, Snacks and Chups</HeaderH1>
+                        <P>
                             We offer you the best and delicious meals you can get in town, all your delicious, Shawarma's, Chups, Snacks, Pizza's, KFC standard prepared chicken and much more...
-                        </p>
+                        </P>
                         <a href='#services' className="btn btn-md bg-theme btn-warning text-light">
                             Order Now
                         </a>
