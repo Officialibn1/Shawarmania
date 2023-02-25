@@ -10,9 +10,9 @@ const Header = () => {
                         <p className="lead">
                             We offer you the best and delicious meals you can get in town, all your delicious, Shawarma's, Chups, Snacks, Pizza's, KFC standard prepared chicken and much more...
                         </p>
-                        <button className="btn btn-md bg-theme btn-warning text-light">
+                        <a href='#services' className="btn btn-md bg-theme btn-warning text-light">
                             Order Now
-                        </button>
+                        </a>
                     </div>
                     <div className='container d-flex align-items-center justify-content-center'>
                         <img src="./images/shawarmania.png" alt="" className="img img-fluid mt-5 mt-lg-1" />

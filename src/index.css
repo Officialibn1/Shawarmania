@@ -25,7 +25,7 @@ code {
 
 /* Logo Styles */
 .CustomLogo{
-  width: clamp(3.5em, 8vw, 10em);
+  width: clamp(3em, 5.5vw, 10em);
 }
 
 
@@ -36,11 +36,13 @@ code {
 }
 
 .P{
-  font-size: .6em;
+  font-size: .7em;
+  opacity: .8;
 }
 
 .P2{
   font-size: 1em;
+  opacity: .8;
 }
 
 .UL {
@@ -56,7 +58,8 @@ code {
 .A{
   text-decoration: none;
   color: #fff;
-  font-size: 1em;
+  font-size: 1.3em;
+  opacity: .8;
 }
 
 

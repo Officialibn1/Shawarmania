@@ -13,11 +13,11 @@ const Footer = () => {
 
 
                         {/* Contact Us */}
-                        <div>
+                        <div className='d-flex gap-4 flex-column flex-lg-row'>
                             <div class="d-flex mt-4">
                                 <i className="bi bi-geo-alt Text me-3 h2"></i>
                                 <p className='fw-light P'>
-                                    Besite Infinity Studio,<br /> Opp. City Chef Restaurant, <br /> State Low-cust, Lapai, Niger State.
+                                    Beside Infinity Studio,<br /> Opp. City Chef Restaurant, <br /> State Low-cust, Lapai, Niger State.
                                 </p>
                             </div>
                             
