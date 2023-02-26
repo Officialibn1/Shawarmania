@@ -7,6 +7,7 @@ import Footer from './Components/Footer';
 import BurgerList from './Components/BurgerList';
 import Spaghetti from './Components/Spaghetti';
 import Navigator from './Components/Navigator';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
@@ -15,9 +16,11 @@ function App() {
         <Header />
         <Search />
         <Navigator />
-        <ShawarmaList />
-        <BurgerList />
-        <Spaghetti />
+        <Routes>
+          <Route path="/" element={<ShawarmaList />}/>
+          <Route path="/burger" element={<BurgerList />}/>
+          <Route path="/spaghetti" element={<Spaghetti />}/>
+        </Routes>
         <Footer />
       </div>
   );

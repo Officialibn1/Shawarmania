@@ -11,10 +11,10 @@ const Navigator = () => {
                         <Link class="link" to='/'>Shawarma</Link>
                     </li>
                     <li class="nav-item">
-                        <Link class="link" to='/'>Burger</Link>
+                        <Link class="link" to='/burger'>Burger</Link>
                     </li>
                     <li class="nav-item">
-                        <Link class="link" to='/'>Spaghetti</Link>
+                        <Link class="link" to='/spaghetti'>Spaghetti</Link>
                     </li>
                 </ul>
             </div>
