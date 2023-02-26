@@ -19,6 +19,7 @@ code {
   box-sizing: border-box;
   /* font-family: 'Roboto Mono', monospace; */
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {

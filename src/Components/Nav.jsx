@@ -21,7 +21,7 @@ const Nav = () => {
                         <li className="nav-item active"><a className='nav-link' href="#home">Home</a></li>
                         <li className="nav-item"><a className='nav-link' href="#search">Search</a></li>
                         <li className="nav-item"><a className='nav-link' href="#services">Services</a></li>
-                        <li className="nav-item"><a className='nav-link' href="#order">Order</a></li>
+                        <li className="nav-item"><a className='nav-link' href="#footer">About</a></li>
                     </ul>
                 </div>
             </div>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer>
+        <footer id='footer'>
             <section className="py-4 py-lg-3 footer-dark bg-dark text-light text-start" >
                 <div className="container">
 
@@ -42,6 +42,11 @@ const Footer = () => {
                             <a href="https://instagram.com/shawarmania_ng?igshid=YmMyMTA2M2Y="><i className="bi bi-instagram h3 Text"></i></a>
                             <a href="https://wa.me/message/QUC6ZCU7LXTVG1"><i className="bi bi-whatsapp h3 Text"></i></a>
                             <a href="instagram.com"><i className="bi bi-facebook h3 Text"></i></a>
+                        </div>
+
+                        {/* Back Up */}
+                        <div className='mt-3'>
+                            <a href="#home" className='Text nav-link'><i className="ms-2 bi bi-arrow-up-circle h2"></i></a>
                         </div>
 
                     </div>
