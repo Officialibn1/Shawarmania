@@ -5,6 +5,7 @@ import ShawarmaList from './Components/ShawarmaList';
 import Search from './Components/Search';
 import Footer from './Components/Footer';
 import BurgerList from './Components/BurgerList';
+import Spaghetti from './Components/Spaghetti';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Search />
         <ShawarmaList />
         <BurgerList />
+        <Spaghetti />
         <Footer />
       </div>
   );
