@@ -6,6 +6,7 @@ import Search from './Components/Search';
 import Footer from './Components/Footer';
 import BurgerList from './Components/BurgerList';
 import Spaghetti from './Components/Spaghetti';
+import Navigator from './Components/Navigator';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Nav />
         <Header />
         <Search />
+        <Navigator />
         <ShawarmaList />
         <BurgerList />
         <Spaghetti />
