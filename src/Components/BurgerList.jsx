@@ -1,6 +1,13 @@
 import React from 'react';
+import Burger from './Burger';
 import { FoodHeader } from './styles/FoodHeader';
-import { H1 } from './styles/H1H2H3';
+
+const burgers = [
+  {SRC: './images/ChickenBurger.jpg', title: 'Burger', span: '~Chicken~', price: 'N1,600.00'},
+  {SRC: './images/BurgerCheeseFries.jpg', title: 'Burger', span: '~Chicken & Fries~', price: 'N2,000.00'},
+  {SRC: './images/BurgerDoubleLayer.png', title: 'Burger', span: '~Chicken Double Layer~', price: 'N2,000.00'},
+  {SRC: './images/ChickenBurgerCombo.jpg', title: 'Burger', span: '~Combo~', price: 'N3,000.00'},
+]
 
 const BurgerList = () => {
     return (
@@ -11,33 +18,9 @@ const BurgerList = () => {
         </FoodHeader>
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-
-          <div class="col">
-            <div class="card">
-              <img src="./images/burger6.jpeg" class="card-img-top bg-light" alt="..." />
-              <div class="card-body">
-                <H1 class="card-title Text">Burger<span>~Regular~</span></H1>
-                <p class="card-text Number">N1,200.00</p>
-              </div>
-              <div className="card-footer text-end">
-                <a href="/" className='Text btn btn-warning text-light'>Order Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card">
-              <img src="./images/burger6.jpeg" class="card-img-top bg-light" alt="..." />
-              <div class="card-body">
-                <H1 class="card-title Text">Burger<span>~Regular~</span></H1>
-                <p class="card-text Number">N1,200.00</p>
-              </div>
-              <div className="card-footer text-end">
-                <a href="/" className='Text btn btn-warning text-light'>Order Now</a>
-              </div>
-            </div>
-          </div>
-
+            {burgers.map(burger => (
+              <Burger key={burger.index} burger={burger} />
+            ))}
         </div>
 
       </div>
