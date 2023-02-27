@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
     return (
-        <nav className='navbar navbar-expand-lg navbar-dark bg-dark fixed-top'>
-            <div className="container">
+        <nav className='navbar navbar-expand-lg navbar-dark bg-dark fixed-top px-lg-3'>
+            <div className="container-fluid">
                 {/* Brand Logo */}
-                <Link to='/' className='navbar-brand'>
-                    <img src="./images/shawarmania.png" alt="Logo"  className='CustomLogo' />
-                </Link>
+                <div className="navbar-brand">
+                    <Link to='/' className='navbar-brand'>
+                        <img src="./images/shawarmania.png" alt="Logo"  className='CustomLogo' />
+                    </Link>
+                </div>
 
                 {/* Toggle Icon */}
                 <button className="navbar-toggler" type='button' data-bs-toggle='collapse' data-bs-target='#navMenu'>
@@ -17,11 +19,17 @@ const Nav = () => {
 
                 {/* Navbar Links */}
                 <div id='navMenu' className="collapse navbar-collapse text-center">
-                    <ul className="navbar-nav ms-auto">
+                    <ul className="navbar-nav ms-auto mb-3 mb-lg-0">
                         <li className="nav-item active"><a className='nav-link' href="#home">Home</a></li>
                         <li className="nav-item"><a className='nav-link' href="#search">Search</a></li>
                         <li className="nav-item"><a className='nav-link' href="#services">Services</a></li>
                         <li className="nav-item"><a className='nav-link' href="#footer">About</a></li>
+                        <li className="nav-item">
+                            <Link to='/' className='Text h5 position-relative'>
+                                <h6 className="position-absolute top-25 start-100" >5</h6>
+                                <i className="bi bi-cart3"></i>
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </div>

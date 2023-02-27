@@ -19,8 +19,9 @@ const Spaghetti = () => {
                             <H1 class="card-title Text">Spaghetti Jollof<br /><span>~Double Compartment TakeAway~</span></H1>
                             <p class="card-text Number">N2,000.00</p>
                         </div>
-                        <div className="card-footer text-end">
-                            <a href="/" className='Text btn btn-warning text-light'>Order Now</a>
+                        <div className="card-footer d-flex">
+                            <a href="/" className='Text'><i className="bi bi-cart-plus h3"></i></a>
+                            <a href="/" className='Text btn btn-warning text-light ms-auto'>Order Now</a>
                         </div>
                     </div>
                 </div>
@@ -32,8 +33,9 @@ const Spaghetti = () => {
                             <H1 class="card-title Text">Spaghetti Jollof<br /><span>~Regular TakeAway~</span></H1>
                             <p class="card-text Number">N1,700.00</p>
                         </div>
-                        <div className="card-footer text-end">
-                            <a href="/" className='Text btn btn-warning text-light'>Order Now</a>
+                        <div className="card-footer d-flex">
+                            <a href="/" className='Text'><i className="bi bi-cart-plus h3"></i></a>
+                            <a href="/" className='Text btn btn-warning text-light ms-auto'>Order Now</a>
                         </div>
                     </div>
                 </div>

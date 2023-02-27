@@ -10,8 +10,9 @@ const Burger = ({burger}) => {
                 <H1 class="card-title Text">{burger.title}<br/><span>{burger.span}</span></H1>
                 <p class="card-text Number">{burger.price}</p>
               </div>
-              <div className="card-footer text-end">
-                <a href="/" className='Text btn btn-warning text-light'>Order Now</a>
+              <div className="card-footer d-flex">
+                <a href="/" className='Text'><i className="bi bi-cart-plus h3"></i></a>
+                <a href="/" className='Text btn btn-warning text-light ms-auto'>Order Now</a>
               </div>
             </div>
           </div>
