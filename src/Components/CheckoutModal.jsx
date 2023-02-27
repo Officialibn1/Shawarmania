@@ -66,6 +66,7 @@ const CheckoutModal = () => {
                         <label>Price</label>
                         <input type="text" name="price" value={'N2,000.00'}/>
                     </Div>
+                    <button type="submit" value="Send" class="btn btn-warning text-light">Order</button>
 
                 </form>
             </div>
@@ -73,7 +74,6 @@ const CheckoutModal = () => {
             {/* Modal Footer */}
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                <button type="submit" value="Send" class="btn btn-warning text-light">Order</button>
             </div>
             </div>
         </div>
