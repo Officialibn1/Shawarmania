@@ -8,6 +8,7 @@ import BurgerList from './Components/BurgerList';
 import Spaghetti from './Components/Spaghetti';
 import Navigator from './Components/Navigator';
 import { Route, Routes } from 'react-router-dom';
+import CheckoutModal from './Components/CheckoutModal';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Nav />
         <Header />
         <Search />
+        <CheckoutModal />
         <Navigator />
         <Routes>
           <Route path="/" element={<ShawarmaList />}/>

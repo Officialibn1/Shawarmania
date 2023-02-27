@@ -13,7 +13,10 @@ const Shawarma = ({shawarma}) => {
                     </div>
                     <div className="card-footer d-flex">
                         <a href="/" className='Text'><i className="bi bi-cart-plus h3"></i></a>
-                        <a href="/" className='Text btn btn-warning text-light ms-auto'>Order Now</a>
+                        {/* <a href="/" className='Text btn btn-warning text-light ms-auto'>Order Now</a> */}
+                        <button type="button" class="btn btn-warning text-light ms-auto" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Order Now
+                        </button>
                     </div>
                 </div>
             </div>
