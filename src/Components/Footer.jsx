@@ -14,14 +14,14 @@ const Footer = () => {
 
                         {/* Contact Us */}
                         <div className='d-flex gap-4 flex-column flex-lg-row'>
-                            <div class="d-flex mt-4">
+                            <div className="d-flex mt-4">
                                 <i className="bi bi-geo-alt Text me-3 h2"></i>
                                 <p className='fw-light P'>
                                     Beside Infinity Studio,<br /> Opp. City Chef Restaurant, <br /> State Low-cust, Lapai, Niger State.
                                 </p>
                             </div>
                             
-                            <div class="d-flex align-items-center">
+                            <div className="d-flex align-items-center">
                                 <i className="bi bi-envelope Text me-3 h2"></i>
                                 <p className='fw-light P2 my-auto'>
                                     shawarmania@gmail.com

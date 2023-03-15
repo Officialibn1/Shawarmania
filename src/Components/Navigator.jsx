@@ -6,15 +6,15 @@ const Navigator = () => {
     return (
         <StyledNavigator>
             <div className="container px-md-3">
-                <ul class="gap-2">
-                    <li class="nav-item">
-                        <Link class="link" to='/'>Shawarma</Link>
+                <ul className="gap-2">
+                    <li className="nav-item">
+                        <Link className="link" to='/'>Shawarma</Link>
                     </li>
-                    <li class="nav-item">
-                        <Link class="link" to='/burger'>Burger</Link>
+                    <li className="nav-item">
+                        <Link className="link" to='/burger'>Burger</Link>
                     </li>
-                    <li class="nav-item">
-                        <Link class="link" to='/spaghetti'>Spaghetti</Link>
+                    <li className="nav-item">
+                        <Link className="link" to='/spaghetti'>Spaghetti</Link>
                     </li>
                 </ul>
             </div>
