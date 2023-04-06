@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
     return (
-        <nav className='navbar navbar-expand-lg navbar-dark bg-dark sticky-top px-lg-3'>
+        <nav className='navbar navbar-dark bg-dark sticky-top px-lg-3'>
             <div className="container-fluid">
                 {/* Brand Logo */}
                 <div className="navbar-brand">
@@ -13,12 +13,12 @@ const Nav = () => {
                 </div>
 
                 {/* Toggle Icon */}
-                <button className="navbar-toggler" type='button' data-bs-toggle='collapse' data-bs-target='#navMenu'>
+                {/* <button className="navbar-toggler" type='button' data-bs-toggle='collapse' data-bs-target='#navMenu'>
                     <span className="navbar-toggler-icon"></span>
-                </button>
+                </button> */}
 
                 {/* Navbar Links */}
-                <div id='navMenu' className="collapse navbar-collapse text-center">
+                <div id='navMenu' className=" text-center pe-4">
                     <ul className="navbar-nav ms-auto mb-3 mb-lg-0">
                         
                         <li className="nav-item">

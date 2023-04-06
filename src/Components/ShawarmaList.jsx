@@ -14,7 +14,7 @@ const ShawarmaList = () => {
           <h1>Shawarma's</h1>
         </FoodHeader>
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
             {Shawarmas.map(shawarma => (
               <Shawarma key={shawarma.id} shawarma={shawarma} />
             ))}

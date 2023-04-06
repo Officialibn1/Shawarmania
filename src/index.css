@@ -36,11 +36,14 @@ code {
 
 .Text{
   color: var(--text-theme);
+  font-size: 12px;
 }
 
 .Number {
   font-family: 'Roboto Mono', monospace;
   font-weight: 300;
+  font-size: 12px;
+  color:  rgb(244,149,27);
 }
 
 .P{

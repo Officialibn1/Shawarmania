@@ -1,4 +1,4 @@
-import { H1 } from './styles/H1H2H3';
+import { H1, Button } from './styles/H1H2H3';
 import { Div, StyledCheckoutModal } from './styles/CheckoutModal.styles';
 import React, {useRef} from 'react';
 import emailjs from '@emailjs/browser';
@@ -31,16 +31,14 @@ const Shawarma = ({shawarma}) => {
                         <p className="card-text Number">{shawarma.price}</p>
                     </div>
                     <div className="card-footer d-flex">
-                        <a href="/" className='Text'><i className="bi bi-cart-plus h3"></i></a>
-                        {/* <a href="/" className='Text btn btn-warning text-light ms-auto'>Order Now</a> */}
-                        <button 
+                        <Button 
                         type="button" 
-                        className="btn btn-warning text-light ms-auto" 
+                        className="btn btn-sm btn-warning text-light mx-auto" 
                         data-bs-toggle="modal" 
                         data-bs-target="#staticBackdrop"
                         >
                             Order Now
-                        </button>
+                        </Button>
                     </div>
                 </div>
 

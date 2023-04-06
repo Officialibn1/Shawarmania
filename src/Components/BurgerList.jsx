@@ -12,7 +12,7 @@ const BurgerList = () => {
           <h1>Burger's</h1>
         </FoodHeader>
 
-        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+        <div className="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
             {burgers.map(burger => (
               <Burger key={burger.id} burger={burger} />
             ))}
