@@ -40,10 +40,11 @@ const Shawarma = ({shawarma}) => {
                     </div>
                     <div className="card-footer d-flex">
                         <Button 
-                        type="button" 
+                        as='a'
+                        href='https://wa.me/message/QUC6ZCU7LXTVG1' 
                         className="btn btn-sm btn-warning text-light mx-auto" 
-                        data-bs-toggle="modal" 
-                        data-bs-target="#staticBackdrop"
+                        // data-bs-toggle="modal" 
+                        // data-bs-target="#staticBackdrop"
                         >
                             Order Now
                         </Button>

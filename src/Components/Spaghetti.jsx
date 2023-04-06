@@ -30,7 +30,7 @@ const Spaghetti = () => {
                             <p className="card-text Number">N2,000.00</p>
                         </div>
                         <div className="card-footer d-flex">
-                            <Button href="/" className=' btn btn-sm btn-warning text-light mx-auto'>Order Now</Button>
+                            <Button as='a' href="https://wa.me/message/QUC6ZCU7LXTVG1" className=' btn btn-sm btn-warning text-light mx-auto'>Order Now</Button>
                         </div>
                     </Card>
                 </div>
@@ -43,7 +43,7 @@ const Spaghetti = () => {
                             <p className="card-text Number">N1,700.00</p>
                         </div>
                         <div className="card-footer d-flex">
-                            <Button href="/" className=' btn btn-sm btn-warning text-light mx-auto'>Order Now</Button>
+                            <Button as='a' href="https://wa.me/message/QUC6ZCU7LXTVG1" className=' btn btn-sm btn-warning text-light mx-auto'>Order Now</Button>
                         </div>
                     </Card>
                 </div>

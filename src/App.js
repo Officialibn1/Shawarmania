@@ -15,8 +15,8 @@ function App() {
   return (
    
       <div>
-        <div class="alert alert-warning alert-dismissible fade show" role="alert" style={{margin: '0px'}}>
-          <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <div class="alert alert-warning alert-dismissible fade show" role="alert" style={{margin: '0px', fontSize: '12px'}}>
+          <strong>Dear Customers, Please Note</strong> This Website does not support payment, but will direct you to our Official WhatsApp to make transactions. We'll make sure to add online payment soon. Thank You.  
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         <Nav />
