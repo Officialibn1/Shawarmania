@@ -2,8 +2,16 @@ import { H1, Button } from './styles/H1H2H3';
 import { Div, StyledCheckoutModal } from './styles/CheckoutModal.styles';
 import React, {useRef} from 'react';
 import emailjs from '@emailjs/browser';
+import styled from 'styled-components';
 
-
+const Card = styled.div`
+  transition: all .3s ease;
+  box-shadow: -3px 0px 3px 0px rgba(0, 0, 0, .1), 3px 3px 3px 0px rgba(0, 0, 0, .1);
+  
+  &:hover{
+    box-shadow: -5px 2px 10px 0px rgba(0, 0, 0, .2), 5px 5px 15px 0px rgba(0, 0, 0, .2);
+  }
+`
 
 
 const Shawarma = ({shawarma}) => {
@@ -24,7 +32,7 @@ const Shawarma = ({shawarma}) => {
     return (
         <>
             <div className="col">
-                <div className="card">
+                <Card className="card">
                     <img src={shawarma.SRC} className="card-img-top bg-light" alt="..." />
                     <div className="card-body">
                         <H1 className="card-title Text">{shawarma.title} <br /><span> {shawarma.span} </span></H1>
@@ -40,7 +48,7 @@ const Shawarma = ({shawarma}) => {
                             Order Now
                         </Button>
                     </div>
-                </div>
+                </Card>
 
                 {/* Checkout Modal */}
                 <StyledCheckoutModal>
