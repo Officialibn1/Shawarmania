@@ -20,10 +20,7 @@ const Nav = () => {
                 {/* Navbar Links */}
                 <div id='navMenu' className="collapse navbar-collapse text-center">
                     <ul className="navbar-nav ms-auto mb-3 mb-lg-0">
-                        <li className="nav-item active"><a className='nav-link' href="#home">Home</a></li>
-                        <li className="nav-item"><a className='nav-link' href="#search">Search</a></li>
-                        <li className="nav-item"><a className='nav-link' href="#services">Services</a></li>
-                        <li className="nav-item"><a className='nav-link' href="#footer">About</a></li>
+                        
                         <li className="nav-item">
                             <Link to='/' className='Text h5 position-relative'>
                                 <h6 className="position-absolute top-25 start-100" >5</h6>
